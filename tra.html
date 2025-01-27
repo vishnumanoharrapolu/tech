@@ -3,39 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR Code Access</title>
+    <title>Techathon 2025</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
-            background-color: #f4f4f4;
+            padding: 0;
+            line-height: 1.6;
         }
-        .qr-container {
+        header {
+            background: #0078D4;
+            color: white;
+            padding: 1rem 0;
             text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .qr-container img {
-            max-width: 300px;
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background: #005BB5;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+        }
+        footer {
+            text-align: center;
+            background: #0078D4;
+            color: white;
+            padding: 1rem 0;
+            position: absolute;
             width: 100%;
+            bottom: 0;
         }
-        h1 {
-            margin-bottom: 20px;
+        .card {
+            background: #f4f4f4;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #0078D4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background: #005BB5;
         }
     </style>
 </head>
 <body>
-    <div class="qr-container">
-        <h1>Scan to Access</h1>
-        <img src="https://i.pinimg.com/736x/4b/dd/ed/4bdded71528c3e85dd824133ec23beac.jpg" alt="QR Code">
-        <p>Scan this QR code to access the website!</p>
-    </div>
+    <header>
+        <h1>Welcome to Techathon 2025</h1>
+        <p>Join us on 15th February 2025 for an exciting competition!</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#registration">Registration</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About the Event</h2>
+        <div class="card">
+            <h3>Coding Competition</h3>
+            <p>Test your coding skills across three challenging levels:</p>
+            <ul>
+                <li>Easy</li>
+                <li>Medium</li>
+                <li>Hard</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Debugging Competition</h3>
+            <p>Show off your debugging prowess in two levels:</p>
+            <ul>
+                <li>Level 1</li>
+                <li>Level 2</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <h2>Schedule</h2>
+        <p>The event will be conducted on <strong>15th February 2025</strong>. The exact timings for each level will be shared closer to the date.</p>
+    </section>
+
+    <section id="registration">
+        <h2>Registration</h2>
+        <p>Register now to secure your spot in the Techathon!</p>
+        <a href="YOUR_GOOGLE_FORM_LINK" class="btn" target="_blank">Register Here</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p>Organizer: [Your Name]</p>
+            <p>Email: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+            <p>Phone: +91-XXXXXXXXXX</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Techathon. All rights reserved.</p>
+    </footer>
 </body>
 </html>
